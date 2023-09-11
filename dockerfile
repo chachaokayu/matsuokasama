@@ -15,6 +15,8 @@ RUN apt install -y  python3.11 python3-pip \
 RUN pip3 install jupyterlab
 RUN pip3 install --upgrade tensorflow
 RUN pip3 install --upgrade tensorboard
+RUN pip3 install -r requirements_cpu.txt
+
 
 ARG root_password="asn10-ten"
 RUN echo root:$root_password | chpasswd
