@@ -17,7 +17,7 @@ COPY requirements_cpu.txt /root/
 RUN pip3 install jupyterlab
 RUN pip3 install --upgrade tensorflow
 RUN pip3 install --upgrade tensorboard
-RUN pip3 install -r /root/requirements_cpu.txt
+RUN pip3 install -r /root/requirements_cpu_kari.txt
 
 
 ARG root_password="asn10-ten"
