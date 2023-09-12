@@ -12,7 +12,7 @@ RUN apt install -y  python3.11 python3-pip \
     && apt clean \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements_cpu.txt /root/
+COPY requirements_cpu_kari.txt /root/
 
 RUN pip3 install jupyterlab
 RUN pip3 install --upgrade tensorflow
